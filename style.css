@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #eae9eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: var(--veryDarkBlue);
+    padding: 2%;
+    text-align: left;
+}
+
+.container {
+    width: 90%;
+    background-color: var(--veryLightGray);
+    margin: 0 auto;
+    text-align: center;
+    color: var(--grayishBlue);
+    box-sizing: border-box;
+}
+
+.cabecalho  {
+    width: 100%;
+    margin: 5% auto 3%;
+}
+
+.cabecalho h2 {
+    font-size: 2.3rem;
+}
+
+.cabecalho h1 {
+    color: var(--veryDarkBlue);
+    font-size: 2.5rem;
+}
+
+.cabecalho p {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    box-sizing: border-box;
+}
+
+.body p {
+    padding-right: 10%;
+    text-align: left;
+    margin-bottom: 4%;
+    margin-bottom: 10%;
+}
+
+.figure {
+    width: 100%;
+    height: 65px;
+    position: relative;
+}
+
+.figure img {
+    position: absolute;
+    top: -8%;
+    right: 8%;
+}
+
+.card {
+    width: 350px;
+    background-color: #fff;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.supervisor {
+    border-top: 4px solid var(--cyan);
+    }
+
+    .double {
+        padding-bottom: 4%;
+    }
+.team {
+    border-top: 4px solid var(--red);
+}
+
+.karma {
+    border-top: 4px solid var(--orange);
+    margin-top: 4%;
+}
+
+.calculator {
+    border-top: 4px solid var(--blue);
+}
+
+@media screen and (max-width: 376px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        width: 85%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .cabecalho {
+        width: 100%;
+        padding: 15% 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .cabecalho h2 {
+        font-size: 1.5rem;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.6rem;
+    }
+
+    .cabecalho p {
+        width: 100%;
+        display: block;
+        padding: 3%;
+        margin: 10px 0 10px 0;
+        text-align: justify;
+        box-sizing: border-box;
+    }
+
+    .body {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 95%;
+        margin: 0;
+    }
+
+    .double {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .karma {
+        margin: 0;
+    }
+
+    .calculator {
+        margin: 0;
+    }
+}
